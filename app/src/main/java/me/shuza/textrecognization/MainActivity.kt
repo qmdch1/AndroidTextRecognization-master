@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity() {
         if (!textRecognizer.isOperational) {
             toast("Dependencies are not loaded yet...please try after few moment!!")
             Logger.d("Dependencies are downloading....try after few moment")
-            return;
+            return
         }
 
         //  Init camera source to use high resolution and auto focus
@@ -154,15 +154,16 @@ class MainActivity : AppCompatActivity() {
         //정렬한 데이터를 모아 놓은 스트링
         var imsisortwords = ArrayList<String>()
         var lastsortwords = ArrayList<String>()
-        for (i in getwords.indices) {
 
+        //대문자, 숫자 만 리스트에 삽입
+        for (i in getwords.indices) {
             // 숫자, 영대문자 데이터를 imsi배열에 추가
             if (Pattern.matches("[0-9]", getwords[i].toString()) == true || Pattern.matches("[A-Z]", getwords[i].toString()) == true) {
                 imsisortwords.add(getwords[i].toString())
             }
-
         }//for
-        Log.e("", "imsisortwords = $imsisortwords")
+
+        Log.e("", "imsisortwords = ${imsisortwords}")
 
         try {
             // imsi배열에 있는 값에서 lastsortwords에 번호판 추출값 삽입
