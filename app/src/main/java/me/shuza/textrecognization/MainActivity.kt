@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity() {
         if (!textRecognizer.isOperational) {
             toast("Dependencies are not loaded yet...please try after few moment!!")
             Logger.d("Dependencies are downloading....try after few moment")
-            return
+            return;
         }
 
         //  Init camera source to use high resolution and auto focus
