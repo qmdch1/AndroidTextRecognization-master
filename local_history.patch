@@ -1,0 +1,17 @@
+Index: app/src/main/java/me/shuza/textrecognization/MainActivity.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/me/shuza/textrecognization/MainActivity.kt	(date 1557988584154)
++++ app/src/main/java/me/shuza/textrecognization/MainActivity.kt	(date 1557988584154)
+@@ -116,9 +116,6 @@
+                     if(result != null || result == ""){
+                         getResult = result
+                     }
+-
+-
+-
+                 }
+             }
+         })
