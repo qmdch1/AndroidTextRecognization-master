@@ -17,8 +17,6 @@ import org.apache.poi.ss.usermodel.Row;
 import java.io.InputStream;
 import java.util.Iterator;
 
-import static java.sql.Types.NULL;
-
 public class getLicense extends AppCompatActivity {
     private TextView textView;
     private String data;
