@@ -1,3 +1,6 @@
+# 시연연상
+https://www.youtube.com/shorts/zy9NzOVrW80
+
 # Android Text Recognition using Google Mobile Vision API
 
 Optical Charecter Recognition (OCR) is the ability that gives a mobile to read text appears in image. We will create Android App that uses Google Mobile Vision API.
